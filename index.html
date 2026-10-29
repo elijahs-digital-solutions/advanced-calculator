@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculator 2.0</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <main class="calculator">
+
+        <!-- ==============================
+             THEME TOGGLE
+        =============================== -->
+        <div class="theme-container">
+
+            <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+                <span class="toggle-circle"></span>
+            </button>
+
+            <span id="themeText">Switch to Dark</span>
+
+        </div>
+
+
+        <!-- ==============================
+             DISPLAY
+        =============================== -->
+        <section class="display">
+
+            <div id="expression" class="expression">
+                0
+            </div>
+
+            <div id="result" class="result">
+                0
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             CALCULATOR BUTTONS
+        =============================== -->
+        <section class="buttons">
+
+            <!-- Row 1 -->
+            <button class="button utility" data-action="clear">
+                C
+            </button>
+
+            <button class="button utility" data-value="(">
+                (
+            </button>
+
+            <button class="button utility" data-value=")">
+                )
+            </button>
+
+            <button class="button utility" data-action="backspace">
+                ⌫
+            </button>
+
+
+            <!-- Row 2 -->
+            <button class="button number" data-value="7">
+                7
+            </button>
+
+            <button class="button number" data-value="8">
+                8
+            </button>
+
+            <button class="button number" data-value="9">
+                9
+            </button>
+
+            <button class="button operator" data-value="÷">
+                ÷
+            </button>
+
+
+            <!-- Row 3 -->
+            <button class="button number" data-value="4">
+                4
+            </button>
+
+            <button class="button number" data-value="5">
+                5
+            </button>
+
+            <button class="button number" data-value="6">
+                6
+            </button>
+
+            <button class="button operator" data-value="×">
+                ×
+            </button>
+
+
+            <!-- Row 4 -->
+            <button class="button number" data-value="1">
+                1
+            </button>
+
+            <button class="button number" data-value="2">
+                2
+            </button>
+
+            <button class="button number" data-value="3">
+                3
+            </button>
+
+            <button class="button operator" data-value="-">
+                −
+            </button>
+
+
+            <!-- Row 5 -->
+            <button class="button number" data-value=".">
+                .
+            </button>
+
+            <button class="button number" data-value="0">
+                0
+            </button>
+
+            <button class="button equals" data-action="equals">
+                =
+            </button>
+
+            <button class="button operator" data-value="+">
+                +
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
